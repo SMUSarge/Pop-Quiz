@@ -1,47 +1,74 @@
-let score;
+// Initialize the score variable to keep track of the user's score
+let score = 0;
+// Ask the user the first question about taste buds
+// The user will input their choice as 1, 2, or 3
+const option1 = "25";
+const option2 = "15";
+const option3 = "10";
+const choice1 = prompt(
+  "About how many taste buds does the average human tongue have? (in the thousands)\n" +
+    "Pick an option (enter 1, 2, or 3):\n" +
+    `1. ${option1}\n` +
+    `2. ${option2}\n` +
+    `3. ${option3}`,
+);
 
-const question1 = "What is 2 + 2? \n1. 3 \n2. 4 \n3. 5";
-const questionOneInput = prompt(question1);
-if (questionOneInput === null) {
-  return;
-}
-if (parseInt(questionOneInput) === 2) {
-  score = 1;
-  alert(`Correct! Your score is: ${score}`);
-} else {
+const answ1 = "3";
+// alert("You chose " + choice1 + "k." + " Your answer is " + answ1 + "k.");
+if (choice1 === answ1) {
+  score += 1;
+  alert(`You chose 10k. Correct!`);
+} else if (choice1 === option2) {
+  alert(`You chose ${option2}. Incorrect! The answer is ${option3}.`);
+
   score = 0;
-  alert(`Incorrect! The correct answer was 2. Your score is:  ${score}. `);
-}
-
-const question2 = "What is 2 / 2? \n1. 1 \n2. 2 \n3. 0";
-const answer2 = 1;
-const questionTwoInput = prompt(question2);
-if (questionTwoInput === null) {
-  return;
-}
-
-if (parseInt(questionTwoInput) === answer2) {
-  score += 1;
-  alert(`Correct! Your score is: ${score}`);
+} else if (choice1 === option1) {
+  alert(`You chose ${option1}. Incorrect! The answer is ${option3}.`);
+  score = 0;
 } else {
-  score += 0;
-  alert(
-    `Incorrect! The correct answer was ${answer2}. Your score is:  ${score}. `,
-  );
+  alert("Invalid response. Please enter 1, 2, or 3.");
 }
 
-const question3 = "What is 2 % 2? \n1. 0 \n2. 1 \n3. 2";
-const answer3 = 1;
-const questionThreeInput = prompt(question3);
-if (questionThreeInput === null) {
-  return;
-}
-if (parseInt(questionThreeInput) === answer3) {
+const choice2 = prompt(
+  "Which is the world’s most ancient forest? :\n" +
+    "1. Amazon Rainforest\n" +
+    "2. Taiga\n" +
+    "3. Daintree Forest",
+);
+const answ2 = "3";
+
+if (choice2 === answ2) {
   score += 1;
-  alert(`Correct! Your final score is: ${score}`);
-} else {
+  alert("You chose Daintree Forest. Correct!");
+} else if (choice2 === "2") {
+  alert(`You chose ${choice2}. Incorrect! The answer is ${answ2}.`);
   score += 0;
-  alert(
-    `Incorrect! The correct answer was ${answer3}. Your final score is:  ${score}. `,
-  );
+} else if (choice2 === "1") {
+  alert(`You chose ${choice2}. Incorrect! The answer is ${answ2}.`);
+  score += 0;
+} else {
+  alert("Invalid response. Please enter 1, 2, or 3.");
 }
+
+const choice3 = prompt(
+  "What was the first feature-length animated movie ever released by Disney?)\n" +
+    "Pick an option (enter 1, 2, or 3):\n" +
+    "1. Snow White and the Seven Dwarfs\n" +
+    "2. Pinocchio\n" +
+    "3. Fantasia",
+);
+const answ3 = "1";
+
+if (choice3 === answ3) {
+  score += 1;
+  alert("You chose Snow White and the Seven Dwarfs. Correct!");
+} else if (choice3 === "2") {
+  alert(`You chose ${choice3}. Incorrect! The answer is ${answ3}.`);
+  score += 0;
+} else if (choice3 === "3") {
+  alert(`You chose ${choice3}. Incorrect! The answer is ${answ3}.`);
+  score += 0;
+} else {
+  alert("Invalid response. Please enter 1, 2, or 3.");
+}
+alert(`Your final score is: ${score}`);
