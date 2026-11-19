@@ -13,21 +13,19 @@ const choice1 = prompt(
 // alert(typeof choice1);
 
 const answ1 = "3";
-
+alert("You chose " + choice1 + "k." + " Your answer is " + answ1 + "k.");
 if (choice1 === answ1) {
   score += 1;
-  alert("You chose 10k");
-  alert("Correct!");
+  alert("You chose 10k. Correct!");
 } else if (choice1 === "2") {
-  alert("You chose 15k");
-  alert("Incorrect!");
+  alert("You chose 15k. Incorrect!");
+
   score = 0;
 } else if (choice1 === "1") {
-  alert("You chose 25k");
-  alert("Incorrect!");
+  alert("You chose 25k. Incorrect!");
   score = 0;
 } else {
-  alert("Invalid or canceled");
+  alert("Invalid response. Please enter 1, 2, or 3.");
 }
 
 const choice2 = prompt(
@@ -40,20 +38,16 @@ const answ2 = "3";
 
 if (choice2 === answ2) {
   score += 1;
-  alert("You chose Daintree Forest");
-  alert("Correct!");
+  alert("You chose Daintree Forest. Correct!");
 } else if (choice2 === "2") {
-  alert("You chose Taiga");
-  alert("Incorrect!");
+  alert("You chose Taiga. Incorrect!");
   score += 0;
 } else if (choice2 === "1") {
-  alert("You chose Amazon Rainforest");
-  alert("Incorrect!");
+  alert("You chose Amazon Rainforest. Incorrect!");
   score += 0;
 } else {
-  alert("Invalid  choice");
+  alert("Invalid response. Please enter 1, 2, or 3.");
 }
-alert(`Your final score is: ${score}`);
 
 const choice3 = prompt(
   "What was the first feature-length animated movie ever released by Disney?)\n" +
@@ -66,18 +60,15 @@ const answ3 = "1";
 
 if (choice3 === answ3) {
   score += 1;
-  alert("You chose Snow White and the Seven Dwarfs ");
-  alert("Correct!");
+  alert("You chose Snow White and the Seven Dwarfs. Correct!");
 } else if (choice3 === "2") {
-  alert("You chose Pinocchio");
-  alert("Incorrect!");
+  alert("You chose Pinocchio. Incorrect!");
   score += 0;
 } else if (choice3 === "3") {
-  alert("You chose Fantasia");
-  alert("Incorrect!");
+  alert("You chose Fantasia. Incorrect!");
   score += 0;
 } else {
-  alert("Invalid or canceled");
+  alert("Invalid response. Please enter 1, 2, or 3.");
 }
 
 alert(`Your final score is: ${score}`);
