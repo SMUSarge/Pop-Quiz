@@ -90,7 +90,7 @@ if (choice3 === answ3) {
   alert("Invalid response. Please enter 1, 2, or 3.");
 }
 
-// Add a conditional statement to display the final score and a message based on the user's performance
+// Add a conditional statement to display the final score and a message based on the user's performanceq
 
 if (score === 3) {
   alert(`Your final score is: ${score}. You are a trivia savant!`);
