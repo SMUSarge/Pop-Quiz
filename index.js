@@ -18,22 +18,24 @@ const answ1 = "3";
 if (choice1 === answ1) {
   score += 1;
   alert(`You chose 10k. Correct!`);
-} else if (choice1 === option2) {
+} else if (choice1 === "2") {
   alert(`You chose ${option2}. Incorrect! The answer is ${option3}.`);
 
   score = 0;
-} else if (choice1 === option1) {
+} else if (choice1 === "1") {
   alert(`You chose ${option1}. Incorrect! The answer is ${option3}.`);
   score = 0;
 } else {
   alert("Invalid response. Please enter 1, 2, or 3.");
 }
-
+const option4 = "Amazon Rainforest";
+const option5 = "Taiga";
+const option6 = "Daintree Forest";
 const choice2 = prompt(
   "Which is the world’s most ancient forest? :\n" +
-    "1. Amazon Rainforest\n" +
-    "2. Taiga\n" +
-    "3. Daintree Forest",
+    `1. ${option4}\n` +
+    `2. ${option5}\n` +
+    `3. ${option6}`,
 );
 const answ2 = "3";
 
@@ -41,10 +43,10 @@ if (choice2 === answ2) {
   score += 1;
   alert("You chose Daintree Forest. Correct!");
 } else if (choice2 === "2") {
-  alert(`You chose ${choice2}. Incorrect! The answer is ${answ2}.`);
+  alert(`You chose ${option5}. Incorrect! The answer is ${option6}.`);
   score += 0;
 } else if (choice2 === "1") {
-  alert(`You chose ${choice2}. Incorrect! The answer is ${answ2}.`);
+  alert(`You chose ${option4}. Incorrect! The answer is ${option6}.`);
   score += 0;
 } else {
   alert("Invalid response. Please enter 1, 2, or 3.");
@@ -63,12 +65,27 @@ if (choice3 === answ3) {
   score += 1;
   alert("You chose Snow White and the Seven Dwarfs. Correct!");
 } else if (choice3 === "2") {
-  alert(`You chose ${choice3}. Incorrect! The answer is ${answ3}.`);
+  alert(
+    `You chose Pinocchio. Incorrect! The answer is Snow White and the Seven Dwarfs.`,
+  );
   score += 0;
 } else if (choice3 === "3") {
-  alert(`You chose ${choice3}. Incorrect! The answer is ${answ3}.`);
+  alert(
+    `You chose Fantasia. Incorrect! The answer is Snow White and the Seven Dwarfs.`,
+  );
   score += 0;
 } else {
   alert("Invalid response. Please enter 1, 2, or 3.");
 }
-alert(`Your final score is: ${score}`);
+
+if (score === 3) {
+  alert(`Your final score is: ${score}. You are a trivia savant!`);
+} else if (score === 2) {
+  alert(`Your final score is: ${score}. Well done!`);
+} else if (score === 1) {
+  alert(`Your final score is: ${score}. Keep practicing!`);
+} else {
+  alert(`Your final score is: ${score}. Better luck next time!`);
+}
+
+// End of quiz script. To further this project, you could add more questions, track high scores, or create a more interactive user interface,and add css styling to improve the visual presentation of the quiz.
