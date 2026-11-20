@@ -39,10 +39,7 @@ const option4 = "Amazon Rainforest";
 const option5 = "Taiga";
 const option6 = "Daintree Forest";
 const choice2 = prompt(
-  "Which is the world’s most ancient forest? :\n" +
-    `1. ${option4}\n` +
-    `2. ${option5}\n` +
-    `3. ${option6}`,
+  `Which is the  most ancient forest in the world? :\n1. ${option4}\n2. ${option5}\n3. ${option6}`,
 );
 
 const answ2 = "3";
