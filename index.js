@@ -1,7 +1,10 @@
 // Initialize the score variable to keep track of the user's score
+
 let score = 0;
+
 // Ask the user the first question about taste buds
 // The user will input their choice as 1, 2, or 3
+
 const option1 = "25";
 const option2 = "15";
 const option3 = "10";
@@ -14,7 +17,7 @@ const choice1 = prompt(
 );
 
 const answ1 = "3";
-// alert("You chose " + choice1 + "k." + " Your answer is " + answ1 + "k.");
+
 if (choice1 === answ1) {
   score += 1;
   alert(`You chose 10k. Correct!`);
@@ -28,6 +31,10 @@ if (choice1 === answ1) {
 } else {
   alert("Invalid response. Please enter 1, 2, or 3.");
 }
+
+// Ask the user the second question about ancient forests
+// The user will input their choice as 1, 2, or 3
+
 const option4 = "Amazon Rainforest";
 const option5 = "Taiga";
 const option6 = "Daintree Forest";
@@ -37,6 +44,7 @@ const choice2 = prompt(
     `2. ${option5}\n` +
     `3. ${option6}`,
 );
+
 const answ2 = "3";
 
 if (choice2 === answ2) {
@@ -52,6 +60,9 @@ if (choice2 === answ2) {
   alert("Invalid response. Please enter 1, 2, or 3.");
 }
 
+// Ask the user the third question about Disney movies
+// The user will input their choice as 1, 2, or 3
+
 const choice3 = prompt(
   "What was the first feature-length animated movie ever released by Disney?)\n" +
     "Pick an option (enter 1, 2, or 3):\n" +
@@ -59,6 +70,7 @@ const choice3 = prompt(
     "2. Pinocchio\n" +
     "3. Fantasia",
 );
+
 const answ3 = "1";
 
 if (choice3 === answ3) {
@@ -77,6 +89,8 @@ if (choice3 === answ3) {
 } else {
   alert("Invalid response. Please enter 1, 2, or 3.");
 }
+
+// Add a conditional statement to display the final score and a message based on the user's performance
 
 if (score === 3) {
   alert(`Your final score is: ${score}. You are a trivia savant!`);
